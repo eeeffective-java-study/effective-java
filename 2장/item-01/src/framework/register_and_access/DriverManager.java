@@ -7,7 +7,9 @@ import mysql.MysqlDriver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DriverManager {
+public final class DriverManager {
+
+    private DriverManager() {}
     private static final List<Driver> DRIVERS = new ArrayList<>();
 
     static {
